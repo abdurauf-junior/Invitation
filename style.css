@@ -35,7 +35,6 @@
 .font-family-great {
     font-family: 'Great', cursive;
 }
-
 body {
     width: 100%;
     max-width: 350px;
@@ -47,21 +46,23 @@ body {
 }
 
 .background-image{
-    position: absolute;
-    left: -20px;
+    position: absolute; 
+    overflow-x: hidden !important;
+    /* left: -20px; */
     z-index: -1;
 }
 
 .background-image img{
-    width: 400px;
-    margin-top: 60px !important;    
+    width: 350px;
+    margin-top: 10px !important;    
     margin-bottom: 100px !important;
+    transform: scale(2rem);
 }
 
 .couple-names{
     width: 350px;
     position: absolute;
-    top: 320px;
+    top: 235px;
     text-align: center;
     /* left: 150px; */
     font-size: 42px;
@@ -135,9 +136,10 @@ body {
 }
 
 .image_2{
-    width: 350px;
+    width: 280px;
     position: absolute;
     z-index: -1;
-    top: 1000px;
+    transform: translateX(100px);
+    top: 1050px;
     transform: rotate(-90deg);
 }
