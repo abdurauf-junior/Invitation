@@ -54,7 +54,7 @@ body {
 
 .background-image img{
     width: 350px;
-    margin-top: 10px !important;    
+    margin-top: 20px !important;    
     margin-bottom: 100px !important;
     transform: scale(2rem);
 }
