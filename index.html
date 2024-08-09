@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-image">
+        <img src="img7.jpg" alt="">
+    </div>
+    <div class="couple-names">
+        <span class="font-family-abril">Sobir</span>
+        <span class="font-family-great">&</span>
+        <span class="font-family-great">Sumayya</span>
+    </div>
+
+    <div class="content">
+        <p class="content__title">
+            Nikoh to'yimizga taklif qilamiz!
+        </p>
+        <p class="content__text font-family-poppins">
+            Qalblar ezguliklarga to'la bo`lgan ushbu qutlug' kunda biz bilan birga bo'ling!
+        </p>
+        <p class="content__date">
+            <span>01 &nbsp; •</span>
+            <span>11 &nbsp;•</span>
+            <span>2024</span>
+        </p>
+        <p class="content__timer" id="timer">
+            Loading...
+        </p>
+    </div>
+    <img class="image_2" src="img9.jpg" alt="">
+
+    <script>
+        const targetDate = new Date("2024-11-01T00:00:00");
+    
+        function updateTimer() {
+            const now = new Date();
+            const timeRemaining = targetDate - now;
+    
+            if (timeRemaining <= 0) {
+                document.getElementById('timer').innerHTML = "Haqiqiy vaqt";
+                clearInterval(timerInterval);
+                return;
+            }
+    
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    
+            document.getElementById('timer').innerHTML = `
+                ${days} kun ${hours} soat qoldi
+            `;
+        }
+        const timerInterval = setInterval(updateTimer, 1000);
+        updateTimer();
+    </script>
+    
+</body>
+</html>
