@@ -1,1 +1,1 @@
-https://abdurauf-junior.github.io/Invitation/
+https://cwdeveloping.github.io/Invitation/
